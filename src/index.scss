@@ -1,0 +1,66 @@
+@keyframes zoom-in {
+  0% {
+      transform: scale(1.0);
+  }
+  100% {
+      transform: scale(1.05);
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+      transform: scale(1.05);
+  }
+  100% {
+      transform: scale(1.0);
+  }
+}
+
+.container-fluid {
+  position: absolute;
+}
+
+#app {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  margin: 20px;
+}
+
+.link-wrap {
+  background-color: white;
+  max-width: 1200px;
+  width: 100%;
+  position: absolute;
+  top: 53px;
+  background: #333;
+  overflow: hidden;
+  height: 0;
+  transition: height .3s ease-out;
+}
+
+.link-wrap span {
+  font-size: 30px;
+}
+
+body {
+  background-color: white;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.container-fluid > div {
+  height: 100%;
+}
